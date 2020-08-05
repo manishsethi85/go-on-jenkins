@@ -13,5 +13,11 @@ pipeline {
                 sh 'go build'
             }
         }
-    }
+    stages {
+        stage('Testing') {
+            steps {
+                echo "Testing Sucessfull"
+            }
+        }
+     }
 }
